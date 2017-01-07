@@ -799,9 +799,9 @@ int midend_process_key(midend *me, int x, int y, int button)
     /*
      * Translate keyboard presses to cursor selection.
      */
-    if (button == '\n' || button == '\r')
+    if (button == '\n' || button == '\r' || button == 's')
       button = CURSOR_SELECT;
-    if (button == ' ')
+    if (button == ' ' || button == 'a')
       button = CURSOR_SELECT2;
 
     /*
